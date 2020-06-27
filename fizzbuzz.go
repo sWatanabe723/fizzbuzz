@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 func main() {
@@ -12,6 +14,8 @@ func main() {
 			fmt.Println("Fizz")
 		} else if i%5 == 0 {
 			fmt.Println("Buzz")
+		} else if strings.Contains(strconv.Itoa(i), "7") {
+			fmt.Println("GitHub")
 		} else {
 			fmt.Println(i)
 		}
