@@ -15,7 +15,7 @@ func main() {
 		} else if i%5 == 0 {
 			fmt.Println("Buzz")
 		} else if strings.Contains(strconv.Itoa(i), "7") {
-			fmt.Println("GitHub")
+			fmt.Println("GitHub-fixed")
 		} else {
 			fmt.Println(i)
 		}
