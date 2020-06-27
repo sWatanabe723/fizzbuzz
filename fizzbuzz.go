@@ -8,21 +8,21 @@ import (
 
 func main() {
 	for i := 0; i < 101; i++ {
-		FizzBuzz(i)
+		fmt.Println(FizzBuzz(i))
 	}
 
 }
 
-func FizzBuzz(i int) {
+func FizzBuzz(i int) string {
 	if i%15 == 0 {
-		fmt.Println("FizzBuzz")
+		return "FizzBuzz"
 	} else if i%3 == 0 {
-		fmt.Println("Fizz")
+		return "Fizz"
 	} else if i%5 == 0 {
-		fmt.Println("Buzz")
+		return "Buzz"
 	} else if strings.Contains(strconv.Itoa(i), "7") {
-		fmt.Println("GitHub-fixed")
+		return "GitHub-fixed"
 	} else {
-		fmt.Println(i)
+		return strconv.Itoa(i)
 	}
 }
